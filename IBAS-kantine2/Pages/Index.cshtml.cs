@@ -6,7 +6,7 @@ namespace IndexCSS
     public class IndexModel : PageModel
     {
         private readonly TableClient _tableClient;
-        string connectionString = Environment.GetEnvironmentVariable("DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=ibasbikeproductionklara;AccountKey=tYjOHBSk7X19PyCg56caEKfZc0aMtSHQ4HiAOg2FFyhM/XdtWXlTGL0v9QKOBYQ2bA1Rxgf+IMxe+ASt25TUBw==;BlobEndpoint=https://ibasbikeproductionklara.blob.core.windows.net/;FileEndpoint=https://ibasbikeproductionklara.file.core.windows.net/;QueueEndpoint=https://ibasbikeproductionklara.queue.core.windows.net/;TableEndpoint=https://ibasbikeproductionklara.table.core.windows.net/");
+        string connectionString = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=ibasbikeproductionklara;AccountKey=tYjOHBSk7X19PyCg56caEKfZc0aMtSHQ4HiAOg2FFyhM/XdtWXlTGL0v9QKOBYQ2bA1Rxgf+IMxe+ASt25TUBw==;BlobEndpoint=https://ibasbikeproductionklara.blob.core.windows.net/;FileEndpoint=https://ibasbikeproductionklara.file.core.windows.net/;QueueEndpoint=https://ibasbikeproductionklara.queue.core.windows.net/;TableEndpoint=https://ibasbikeproductionklara.table.core.windows.net/";
 
         public List<MenuItem> MenuItems { get; set; } = new();
 
