@@ -12,14 +12,13 @@ namespace IndexCSS
 
         public IndexModel()
         {
-            _tableClient = new TableClient(connectionString, "WeeklyMenu"); // Ensure this matches your table name
+            _tableClient = new TableClient(connectionString, "WeeklyMenu"); 
         }
         //tes
         public void OnGet()
         {
             try
             {
-                // Fetch all items with PartitionKey "CanteenMenu"
                 var items = _tableClient.Query<MenuItem>(m => m.PartitionKey == "CanteenMenu");
 
                 foreach (var item in items)
@@ -31,7 +30,7 @@ namespace IndexCSS
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                // For development, consider displaying the error on the page temporarily for troubleshooting
+                
             }
         }
     }
