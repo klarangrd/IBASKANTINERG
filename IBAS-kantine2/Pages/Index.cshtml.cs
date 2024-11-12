@@ -14,7 +14,7 @@ namespace IndexCSS
         {
             _tableClient = new TableClient(connectionString, "WeeklyMenu"); // Ensure this matches your table name
         }
-
+        //test
         public void OnGet()
         {
             try
